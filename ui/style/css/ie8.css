@@ -1,0 +1,15 @@
+.banner .banner-bar .banner-bar-buttons ul li a {height: 115px; width: 115px;}
+
+.btext {float:left; width:100%;}
+.banner .banner-bar {float:left; width:100%; overflow: hidden;}
+
+.banner .banner-text {float:left !important; margin-top: 110px;}
+.banner .banner-text a {width:250px;}
+
+.inner.banner .inner.banner-bar {margin-top: 26px;}
+
+.side-nav ul li a {width:225px;}
+
+.contact-form ul li input.tf {height: auto !important; line-height: 24px !important; padding-top: 15px !important; padding-bottom:10px !important;}
+.contact-form ul li input.tf:active, 
+.contact-form ul li input.tf:focus {outline: none;}

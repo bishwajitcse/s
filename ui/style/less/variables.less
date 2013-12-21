@@ -1,0 +1,311 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+@PRIMARY:				#8b0f04;
+@PRIMARYRED:			#ee3224;
+@SECONDARY:				#5f5f5f;
+
+@BORDER:				#dddddd;
+
+// Grays
+// -------------------------
+@BLACK:                 #000;
+@GRAYDARKER:            #222;
+@GRAYDARK:              #616e78;
+@GRAY:                  #777;
+@GRAYLIGHT:             #999;
+@GRAYLIGHTER:           #eee;
+@WHITE:                 #fff;
+
+
+// Accent colors
+// -------------------------
+@BLUE:                  #0277c4;
+@BLUEDARK:              #0064cd;
+@GREEN:                 #019d13;
+@RED:                   #a70101;
+@YELLOW:                #ffc40d;
+@ORANGE:                #f89406;
+@PINK:                  #c3325f;
+@PURPLE:                #7a43b6;
+
+
+// Scaffolding
+// -------------------------
+@BODYBACKGROUND:        #e3e3e3;
+@TEXTCOLOR:             @GRAYDARK;
+
+
+// Links
+// -------------------------
+@LINKCOLOR:             @PRIMARYRED;
+@LINKCOLORHOVER:        @PRIMARY;
+
+
+// Typography
+// -------------------------
+@FONT:        			'hn_pro_light', Helvetica, Arial, sans-serif;
+@FONTM:        			'hn_pro_med', Helvetica, Arial, sans-serif;
+@FONTB:        			'hn_pro_bold', Helvetica, Arial, sans-serif;
+
+@BASEFONTFAMILY:        'hn_pro_light', Helvetica, Arial, sans-serif;
+@SERIFFONT:      		Georgia, "Times New Roman", Times, serif;
+@MONOFONT:        		Monaco, Menlo, Consolas, "Courier New", monospace;
+
+@BASEFONTSIZE:          14px;
+@BASEFONT:        		@FONT;
+@BASELINEHEIGHT:        22px;
+@ALTFONT:         		@SERIFFONT;
+
+@HEADINGSFONT:    		inherit; // empty to use BS default, @BASEFONT
+@HEADINGSFONTWEIGHT:    bold;    // instead of browser default, bold
+@HEADINGSCOLOR:         inherit; // empty to use BS default, @TEXTCOLOR
+
+
+// Component sizing
+// -------------------------
+// Based on 14px font-size and 20px line-height
+
+@FONTSIZELARGE:         @BASEFONTSIZE * 1.25; // ~18px
+@FONTSIZESMALL:         @BASEFONTSIZE * 0.85; // ~12px
+@FONTSIZEMINI:          @BASEFONTSIZE * 0.75; // ~11px
+
+@PADDINGLARGE:          14px 19px; // 44px
+@PADDINGSMALL:          2px 10px;  // 26px
+@PADDINGMINI:           0 6px;   // 22px
+
+@BASEBORDERRADIUS:      3px;
+@BORDERRADIUSLARGE:     3px;
+@BORDERRADIUSSMALL:     3px;
+
+
+// Tables
+// -------------------------
+@TABLEBACKGROUND:                   transparent; // overall background-color
+@TABLEBACKGROUNDAccent:             #f9f9f9; // for striping
+@TABLEBACKGROUNDHover:              #f5f5f5; // for hover
+@TABLEBORDER:                       #ddd; // table and cell border
+
+// Buttons
+// -------------------------
+@BTNBACKGROUND:                     @WHITE;
+@BTNBACKGROUNDHIGHLIGHT:            darken(@WHITE, 10%);
+@BTNBORDER:                         #ccc;
+
+@BTNPRIMARYBACKGROUND:              @BLUE;
+@BTNPRIMARYBACKGROUNDHIGHLIGHT:     @BLUE;
+
+@BTNINFOBACKGROUND:                 #5bc0de;
+@BTNINFOBACKGROUNDHIGHLIGHT:        #2f96b4;
+
+@BTNSUCCESSBACKGROUND:              #62c462;
+@BTNSUCCESSBACKGROUNDHIGHLIGHT:     #51a351;
+
+@BTNWARNINGBACKGROUND:              lighten(@ORANGE, 15%);
+@BTNWARNINGBACKGROUNDHIGHLIGHT:     @ORANGE;
+
+@BTNDANGERBACKGROUND:               #ee5f5b;
+@BTNDANGERBACKGROUNDHIGHLIGHT:      #bd362f;
+
+@BTNINVERSEBACKGROUND:              #444;
+@BTNINVERSEBACKGROUNDHIGHLIGHT:     @GRAYDARKER;
+
+
+// Forms
+// -------------------------
+@INPUTBACKGROUND:               @WHITE;
+@INPUTBORDER:                   #ccc;
+@INPUTBORDERRADIUS:             4px;
+@INPUTDISABLEDBACKGROUND:       @GRAYLIGHTER;
+@FORMACTIONSBACKGROUND:         #f5f5f5;
+@INPUTHEIGHT:                   32px; // base line-height + 8px vertical padding + 2px top/bottom border
+@SELECTHEIGHT:                  32px; // base line-height + 8px vertical padding + 2px top/bottom border
+
+
+// Dropdowns
+// -------------------------
+@DROPDOWNBACKGROUND:            @WHITE;
+@DROPDOWNBORDER:                rgba(0,0,0,.2);
+@DROPDOWNDIVIDERTOP:            #e5e5e5;
+@DROPDOWNDIVIDERBOTTOM:         @WHITE;
+
+@DROPDOWNLINKCOLOR:             @GRAYDARK;
+@DROPDOWNLINKCOLORHOVER:        @WHITE;
+@DROPDOWNLINKCOLORACTIVE:       @WHITE;
+
+@DROPDOWNLINKBACKGROUNDACTIVE:  @LINKCOLOR;
+@DROPDOWNLINKBACKGROUNDHOVER:   @DROPDOWNLINKBACKGROUNDACTIVE;
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@ZINDEXDROPDOWN:          1000;
+@ZINDEXPOPOVER:           1010;
+@ZINDEXTOOLTIP:           1030;
+@ZINDEXFIXEDNAVBAR:       1030;
+@ZINDEXMODALBACKDROP:     1040;
+@ZINDEXMODAL:             1050;
+
+
+// Sprite icons path
+// -------------------------
+@ICONSPRITEPATH:          "../img/glyphicons-halflings.png";
+@ICONWHITESPRITEPATH:     "../img/glyphicons-halflings-white.png";
+@BASEURL:                 "../../media/dist";
+
+
+// Input placeholder text color
+// -------------------------
+@PLACEHOLDERTEXT:         @GRAYLIGHT;
+
+
+// Hr border color
+// -------------------------
+@HRBORDER:                @GRAYLIGHTER;
+
+
+// Horizontal forms & lists
+// -------------------------
+@HORIZONTALCOMPONENTOFFSET:       180px;
+
+
+// Wells
+// -------------------------
+@WELLBACKGROUND:                  #f5f5f5;
+
+
+// Navbar
+// -------------------------
+@NAVBARCOLLAPSEWIDTH:             979px;
+@NAVBARCOLLAPSEDESKTOPWIDTH:      @NAVBARCOLLAPSEWIDTH + 1;
+
+@NAVBARHEIGHT:                    40px;
+@NAVBARBACKGROUNDHIGHLIGHT:       #ffffff;
+@NAVBARBACKGROUND:                darken(@NAVBARBACKGROUNDHIGHLIGHT, 5%);
+@NAVBARBORDER:                    darken(@NAVBARBACKGROUND, 12%);
+
+@NAVBARTEXT:                      #777;
+@NAVBARLINKCOLOR:                 #777;
+@NAVBARLINKCOLORHOVER:            @GRAYDARK;
+@NAVBARLINKCOLORACTIVE:           @GRAY;
+@NAVBARLINKBACKGROUNDHOVER:       transparent;
+@NAVBARLINKBACKGROUNDACTIVE:      darken(@NAVBARBACKGROUND, 5%);
+
+@NAVBARBRANDCOLOR:                @NAVBARLINKCOLOR;
+
+// Inverted navbar
+@NAVBARINVERSEBACKGROUND:                #111111;
+@NAVBARINVERSEBACKGROUNDHIGHLIGHT:       #222222;
+@NAVBARINVERSEBORDER:                    #252525;
+
+@NAVBARINVERSETEXT:                      @GRAYLIGHT;
+@NAVBARINVERSELINKCOLOR:                 @GRAYLIGHT;
+@NAVBARINVERSELINKCOLORHOVER:            @WHITE;
+@NAVBARINVERSELINKCOLORACTIVE:           @NAVBARINVERSELINKCOLORHOVER;
+@NAVBARINVERSELINKBACKGROUNDHOVER:       transparent;
+@NAVBARINVERSELINKBACKGROUNDACTIVE:      @NAVBARINVERSEBACKGROUND;
+
+@NAVBARINVERSESEARCHBACKGROUND:          lighten(@NAVBARINVERSEBACKGROUND, 25%);
+@NAVBARINVERSESEARCHBACKGROUNDFOCUS:     @WHITE;
+@NAVBARINVERSESEARCHBORDER:              @NAVBARINVERSEBACKGROUND;
+@NAVBARINVERSESEARCHPLACEHOLDERCOLOR:    #ccc;
+
+@NAVBARINVERSEBRANDCOLOR:                @NAVBARINVERSELINKCOLOR;
+
+
+// Pagination
+// -------------------------
+@PAGINATIONBACKGROUND:                @SECONDARY;
+@PAGINATIONBORDER:                    #dddddd;
+@PAGINATIONACTIVEBACKGROUND:       	  @PRIMARYRED;
+
+
+// Hero unit
+// -------------------------
+@HEROUNITBACKGROUND:              @GRAYLIGHTER;
+@HEROUNITHEADINGCOLOR:            inherit;
+@HEROUNITLEADCOLOR:               inherit;
+
+
+// Form states and alerts
+// -------------------------
+@WARNINGTEXT:             #c09853;
+@WARNINGBACKGROUND:       #fcf8e3;
+@WARNINGBORDER:           darken(spin(@WARNINGBACKGROUND, -10), 3%);
+
+@ERRORTEXT:               #b94a48;
+@ERRORBACKGROUND:         #f2dede;
+@ERRORBORDER:             darken(spin(@ERRORBACKGROUND, -10), 3%);
+
+@SUCCESSTEXT:             #468847;
+@SUCCESSBACKGROUND:       #dff0d8;
+@SUCCESSBORDER:           darken(spin(@SUCCESSBACKGROUND, -10), 5%);
+
+@INFOTEXT:                #3a87ad;
+@INFOBACKGROUND:          #d9edf7;
+@INFOBORDER:              darken(spin(@INFOBACKGROUND, -10), 7%);
+
+
+// Tooltips and popovers
+// -------------------------
+@TOOLTIPCOLOR:            #fff;
+@TOOLTIPBACKGROUND:       #000;
+@TOOLTIPARROWWIDTH:       5px;
+@TOOLTIPARROWCOLOR:       @TOOLTIPBACKGROUND;
+
+@POPOVERBACKGROUND:       #fff;
+@POPOVERARROWWIDTH:       10px;
+@POPOVERARROWCOLOR:       #fff;
+@POPOVERTITLEBACKGROUND:  darken(@POPOVERBACKGROUND, 3%);
+
+// Special enhancement for popovers
+@POPOVERARROWOUTERWIDTH:  @POPOVERARROWWIDTH + 1;
+@POPOVERARROWOUTERCOLOR:  rgba(0,0,0,.25);
+
+
+
+// GRID
+// --------------------------------------------------
+
+
+// Default 940px grid
+// -------------------------
+@GRIDCOLUMNS:             96;
+@GRIDCOLUMNWIDTH:         10px;
+@GRIDGUTTERWIDTH:         0px;
+@GRIDROWWIDTH:            (@GRIDCOLUMNS * @GRIDCOLUMNWIDTH);
+
+// 1200px min
+@GRIDCOLUMNWIDTH1200:     12px;
+@GRIDGUTTERWIDTH1200:     0px;
+@GRIDROWWIDTH1200:        (@GRIDCOLUMNS * @GRIDCOLUMNWIDTH1200);
+
+// 768px-979px
+@GRIDCOLUMNWIDTH768:      7.5px;
+@GRIDGUTTERWIDTH768:      0;
+@GRIDROWWIDTH768:         (@GRIDCOLUMNS * @GRIDCOLUMNWIDTH768);
+
+
+// Fluid grid
+// -------------------------
+@FLUIDGRIDCOLUMNWIDTH:    percentage(@GRIDCOLUMNWIDTH/@GRIDROWWIDTH);
+@FLUIDGRIDGUTTERWIDTH:    percentage(@GRIDGUTTERWIDTH/@GRIDROWWIDTH);
+
+// 1200px min
+@FLUIDGRIDCOLUMNWIDTH1200:     percentage(@GRIDCOLUMNWIDTH1200/@GRIDROWWIDTH1200);
+@FLUIDGRIDGUTTERWIDTH1200:     percentage(@GRIDGUTTERWIDTH1200/@GRIDROWWIDTH1200);
+
+// 768px-979px
+@FLUIDGRIDCOLUMNWIDTH768:      percentage(@GRIDCOLUMNWIDTH768/@GRIDROWWIDTH768);
+@FLUIDGRIDGUTTERWIDTH768:      percentage(@GRIDGUTTERWIDTH768/@GRIDROWWIDTH768);

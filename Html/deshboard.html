@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Nexa CMS</title>
+<link rel="stylesheet" href="Assets/css/style.css" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="Assets/css/mosaic.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="Assets/js/mosaic.1.0.1.js"></script>
+<script type="text/javascript">  
+			
+			jQuery(function($){
+				
+				$('.circle').mosaic({
+					opacity		:	0.8			//Opacity for overlay (0-1)
+				});
+				
+				$('.fade').mosaic();
+				
+				$('.bar').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar2').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar3').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top'		//Vertical anchor position
+				});
+				
+				$('.cover').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px'		//Horizontal position on hover
+				});
+				
+				$('.cover2').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top',		//Vertical anchor position
+					hover_y		:	'80px'		//Vertical position on hover
+				});
+				
+				$('.cover3').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px',	//Horizontal position on hover
+					hover_y		:	'300px'		//Vertical position on hover
+				});
+		    
+		    });
+		    
+		</script>
+</head>
+
+
+
+<body>
+<div class="wrapper">
+
+<!--start topbar-->
+<div id="topimg">
+  <div class="topimg_left"> <img src="assets/image/logo.png" width="" height="" /></div>
+  <div class="topimg_right">
+    <div id="topmnu">
+    
+      <div class="headerRight-col">
+       
+        <div class="topbar_left">
+		<img width="" height="" alt="" src="assets/image/topborder.png">
+         </div>
+	   
+	   <!-- login details start here -->
+		<div class="loginDetail">
+                        <div>
+                            <p>
+                                Login:</p>
+                        </div>
+                        <div>
+                            <!-- login date start here -->
+                            <div class="loginDate">
+                                <ul class="topLink">
+                                    <li style="border-right:none;">
+                                        <img src="Assets/image/calander.png" height="9" width="10" alt=""></li>
+                                  
+                                    <li><a href="javascript:;" class="topLink-divider">09-11-2012 </a></li>
+                                </ul>
+                            </div>
+                            <!-- login date ends here -->
+                            <!-- loginTime Start Here -->
+                            <div class="loginTime">
+                                <ul class="topLink">
+                                    <li style="border-right:none;">
+                                        <img src="Assets/image/clock.png" height="10" width="10">
+                                    </li>
+                                   
+                                    <li><a href="javascript:;" class="topLink-divider">06:07:23 AM </a></li>
+                                </ul>
+                            </div>
+                            <!-- LoginTime ends here -->
+                        </div>
+                    </div>
+					
+					  <!-- login details end here -->
+					  
+					  
+		<div class="topbar_left">
+		<img width="" height="" alt="" src="assets/image/topborder.png">
+       </div>
+	   
+
+		 <!-- logoutSection Start here -->
+        <div class="logoutSection">
+		 <div class="welcomeText">Welcome,Administrator!  <a href=""><img width="" height="" alt="" src="assets/image/topmessage.png" style="vertical-align:middle;"> </a></div>
+		   <div style="clear:both"></div>
+          <ul class="topLink">
+            <li class="topLink1"> <a href="javascript:;"> <img width="" height="" alt="" src="assets/image/home.png"> Home </a></li>
+            <li class="topLink2"> <a class="topLink-divider" href="javascript:; "> <img width="" height="" alt="" src="assets/image/layout.png" style="padding-top:2px; vertical-align:middle;"> Logout       </a></li>
+            <li class="topLink3"> <a href="javascript:;"> <img width="" height="" alt="" src="assets/image/settings.png" style="vertical-align:middle;"> <img width="" height="" alt="" src="assets/image/white arrow.png"> </a></li>
+          </ul>
+        </div>
+        <!-- logoutSection ends here -->
+		
+      </div>
+    </div>
+  </div>
+</div>
+<div style="clear:both"></div>
+<!--end topbar-->
+
+
+
+
+<!--start menubar-->
+<div id="menu">
+  <ul class="menu">
+     <li class="activetdesh"><a href="deshboard.html"> PAGES </a>  </li>
+    <li><a  href="profile.html">  TEXT </a></li>
+    <li><a href="work.html">  SERVICES </a></li>
+    <li><a href="edu.html"> IMAGES </a></li>
+    <li><a href="blog.html"> E-COMMERCE </a></li>
+    <li><a class="" href="contact.html"> REPORTS </a></li>
+    <li><a class="" href="contact.html">LOGIN PROFILE </a></li>
+	 <li><a class="" href="contact.html"> SEO MODULE </a></li>
+	  <li><a class="last" href="contact.html"> SETTINGS </a></li>
+  </ul>
+  <div style="clear:both"></div>
+</div>
+
+<!--end menubar-->
+
+
+
+
+
+<!--start content-->
+<div class="content">
+ <!--Deshboard start-->
+ 
+ 
+  <!--start Site Performance-->
+  <div class="deshboard">
+  <div class="site_performance">
+  <div class="site_performance_top"><span class="site_text">SITE </span> PERFORMANCE</div>
+ <div class="graph_image"><img width="" height="" alt="" src="assets/image/graph.png"></div>
+ </div>
+  <!--start Site Performance-->
+
+
+
+   <!--Box Menu Div start--> 
+   <div class="box_menu">
+  
+<ul>
+
+	 <!--Menu  Start--> 	
+    <li>
+
+	<div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/pages.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">PAGES</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+
+ </li>
+  <!--Menu  End--> 
+  <!--Menu  Start--> 	
+    <li>
+    <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/text.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">TEXT</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+
+    </li>
+   <!--Menu  End--> 
+<!--Menu  Start--> 	
+    <li>
+   <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/services.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">SERVICES</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+    </li>
+     <!--Menu  End--> 
+		 <!--Menu  Start--> 	
+    <li>
+    <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/images.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">IMAGES</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+    </li>
+     <!--Menu  End--> 
+
+		 <!--Menu  Start--> 	
+    <li>
+     <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/reports.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">REPORTS</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+    </li>
+     <!--Menu  End--> 
+	  <!--Menu  Start--> 	
+    <li>
+     <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/login-profile.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">LOGIN-PROFILE</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+    </li>
+     <!--Menu  End--> 
+	 
+	   <!--Menu  Start--> 	
+    <li>
+     <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/seo.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">SEO</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+    </li>
+     <!--Menu  End--> 
+	 
+	   <!--Menu  Start--> 	
+    <li>
+     <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/login-profile.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">LOGIN-PROFILE</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+    </li>
+     <!--Menu  End--> 
+	   <!--Menu  Start--> 	
+    <li>
+     <div class="mosaic-block cover3">
+<div class="mosaic-overlay">  <a href=""><img alt="" src="assets/image/help-link.png" width="" height=""></a></div>
+<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+<div class="details">
+<span class="box_menu_text">HELP-LINK</span>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+</div>
+</a> </div>
+    </li>
+     <!--Menu  End--> 
+		
+  </ul>
+  
+   <div style="clear:both"></div> 
+  </div>  
+  <!--Box Menu Div end--> 
+ 
+ 
+  </div>
+  <!--Deshboard end--> 
+ 
+
+
+
+</div>
+<!--end content-->
+ <div style="clear:both"></div>
+
+  
+  
+
+
+
+
+
+<!--start footer-->
+<div class="footer">
+  <div class="footer_inner">
+    <div class="bottommenu">
+      <ul>
+        <li><a href="#">Legal</a></li>
+        <li>|</li>
+        <li><a href="#">Developers</a></li>
+		 <li>|</li>
+		<li><a href="#">Help</a></li>
+        <li>|</li>
+        <li><a href="#">Contact Us</a></li>
+		<li>|</li>
+		<li><a href="#">Administrator</a></li>
+        <li>|</li>
+        <li><a href="#">Report</a></li>
+      </ul>
+    </div>
+    <div class="copyright"> @ 2013 Nexa Omnicard.All rights reserved </div>
+    <div style="clear:both;"></div>
+  </div>
+</div>
+<!--End footer-->
+
+
+
+</body>
+</html>

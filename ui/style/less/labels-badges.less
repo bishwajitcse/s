@@ -1,0 +1,84 @@
+//
+// Labels and badges
+// --------------------------------------------------
+
+
+// Base classes
+.label,
+.badge {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: @BASEFONTSIZE * .846;
+  font-weight: bold;
+  line-height: 14px; // ensure proper line-height if floated
+  color: @WHITE;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  background-color: @GRAYLIGHT;
+}
+// Set unique padding and border-radii
+.label {
+  .border-radius(3px);
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  .border-radius(9px);
+}
+
+// Empty labels/badges collapse
+.label,
+.badge {
+  &:empty {
+    display: none;
+  }
+}
+
+// Hover/focus state, but only for links
+a {
+  &.label:hover,
+  &.label:focus,
+  &.badge:hover,
+  &.badge:focus {
+    color: @WHITE;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+// Colors
+// Only give background-color difference to links (and to simplify, we don't qualifty with `a` but [href] attribute)
+.label,
+.badge {
+  // Important (red)
+  &-important         { background-color: @ERRORTEXT; }
+  &-important[href]   { background-color: darken(@ERRORTEXT, 10%); }
+  // Warnings (orange)
+  &-warning           { background-color: @ORANGE; }
+  &-warning[href]     { background-color: darken(@ORANGE, 10%); }
+  // Success (green)
+  &-success           { background-color: @SUCCESSTEXT; }
+  &-success[href]     { background-color: darken(@SUCCESSTEXT, 10%); }
+  // Info (turquoise)
+  &-info              { background-color: @INFOTEXT; }
+  &-info[href]        { background-color: darken(@INFOTEXT, 10%); }
+  // Inverse (black)
+  &-inverse           { background-color: @GRAYDARK; }
+  &-inverse[href]     { background-color: darken(@GRAYDARK, 10%); }
+}
+
+// Quick fix for labels/badges in buttons
+.btn {
+  .label,
+  .badge {
+    position: relative;
+    top: -1px;
+  }
+}
+.btn-mini {
+  .label,
+  .badge {
+    top: 0;
+  }
+}

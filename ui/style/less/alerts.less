@@ -1,0 +1,79 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: @BASELINEHEIGHT;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: @WARNINGBACKGROUND;
+  border: 1px solid @WARNINGBORDER;
+  .border-radius(@BASEBORDERRADIUS);
+}
+.alert,
+.alert h4 {
+  // Specified for the h4 to prevent conflicts of changing @HEADINGSCOLOR
+  color: @WARNINGTEXT;
+}
+.alert h4 {
+  margin: 0;
+}
+
+// Adjust close link position
+.alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: @BASELINEHEIGHT;
+}
+
+
+// Alternate styles
+// -------------------------
+
+.alert-success {
+  background-color: @SUCCESSBACKGROUND;
+  border-color: @SUCCESSBORDER;
+  color: @SUCCESSTEXT;
+}
+.alert-success h4 {
+  color: @SUCCESSTEXT;
+}
+.alert-danger,
+.alert-error {
+  background-color: @ERRORBACKGROUND;
+  border-color: @ERRORBORDER;
+  color: @ERRORTEXT;
+}
+.alert-danger h4,
+.alert-error h4 {
+  color: @ERRORTEXT;
+}
+.alert-info {
+  background-color: @INFOBACKGROUND;
+  border-color: @INFOBORDER;
+  color: @INFOTEXT;
+}
+.alert-info h4 {
+  color: @INFOTEXT;
+}
+
+
+// Block alerts
+// -------------------------
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}

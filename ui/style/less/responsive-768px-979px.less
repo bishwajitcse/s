@@ -1,0 +1,20 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  // Fixed grid
+  #grid > .core(@GRIDCOLUMNWIDTH768, @GRIDGUTTERWIDTH768);
+
+  // Fluid grid
+  #grid > .fluid(@FLUIDGRIDCOLUMNWIDTH768, @FLUIDGRIDGUTTERWIDTH768);
+
+  // Input grid
+  #grid > .input(@GRIDCOLUMNWIDTH768, @GRIDGUTTERWIDTH768);
+
+  // No need to reset .thumbnails here since it's the same @GRIDGUTTERWIDTH
+
+
+}
